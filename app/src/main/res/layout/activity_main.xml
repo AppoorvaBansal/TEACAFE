@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/find_desired"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<com.google.android.material.card.MaterialCardView
+            android:id="@+id/view_pager_card"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_bar">-->
+
+            <TextView
+                android:id="@+id/txt_option_title_tea_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the desired type of tea"
+                app:layout_constraintStart_toStartOf="@id/txt_option_title_tea_origin"
+                app:layout_constraintTop_toBottomOf="@id/title_bar"
+
+
+                />
+
+            <RadioGroup
+                android:id="@+id/rdtea_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:checkedButton="@id/option_green_tea"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@id/txt_option_title_tea_origin"
+                app:layout_constraintTop_toBottomOf="@id/title_bar">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option_green_tea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green Tea" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option_black_tea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black Tea" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option_Herbal_Tea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Herbal Tea" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    app:layout_constraintStart_toStartOf="@id/rdtea_origin"
+                    app:layout_constraintTop_toBottomOf="@id/title_bar"
+                />
+
+
+
+            </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/go_to_Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Result"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.891"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rdtea_origin"
+            tools:ignore="MissingConstraints" />
+
+
+        <!--   <androidx.viewpager2.widget.ViewPager2
+               android:id="@+id/pager"
+               android:layout_width="353dp"
+               android:layout_height="350dp"> >
+
+
+           </androidx.viewpager2.widget.ViewPager2>
+-->
+
+
+     <!--   </com.google.android.material.card.MaterialCardView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

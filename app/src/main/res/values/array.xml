@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tea_types">
+        <item>@string/black_tea</item>
+        <item>@string/green_tea</item>
+        <item>@string/herbal_tea</item>
+    </string-array>
+
+    <string-array name="sort_oder">
+        <item>@string/pref_default_sort</item>
+        <item>@string/pref_tea_type_sort</item>
+        <item>@string/pref_caffeine_sort</item>
+    </string-array>
+
+    <string-array name="sort_oder_value">
+        <item>@string/pref_default_sort_value</item>
+        <item>@string/pref_tea_type_sort_value</item>
+        <item>@string/pref_caffeine_sort_value</item>
+    </string-array>
+
+</resources>

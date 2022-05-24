@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Teacup</string>
+    <string name="steep_activity_name">Steep Timer</string>
+    <string name="settings_activity_name">Settings</string>
+    <string name="menu_action_settings">Settings</string>
+    <string name="menu_action_favorite">Favorite</string>
+    <string name="menu_action_show_favorite">Show Favorites</string>
+    <string name="menu_action_show_list">Show List</string>
+    <string name="menu_action_show_timer">Show Timer</string>
+    <string name="menu_action_add">Add Tea</string>
+    <string name="menu_action_save">Save</string>
+
+    <string name="tea_name">Tea Name</string>
+    <string name="tea_description">Description</string>
+    <string name="tea_origin">Tea Origin</string>
+    <string name="tea_ingredients">Ingredients</string>
+    <string name="steep_time">Steep Time</string>
+    <string name="caffeine_level">Caffeine Level</string>
+    <string name="toolbar_image">Toolbar image of a tea</string>
+
+    <string name="steep_time_minutes">%1$d minutes</string>
+    <string name="caffeine">Caffeine Level: %1$s</string>
+    <string name="undo_deleted">Tea deleted: %1$s</string>
+    <string name="reset_button">Reset</string>
+    <string name="start_button">Start</string>
+    <string name="required_text_tea_name">Tea name required</string>
+
+    <string name="black_tea">Black Tea</string>
+    <string name="green_tea">Green Tea</string>
+    <string name="herbal_tea">Herbal Tea</string>
+
+    <string name="pref_default_sort">Default</string>
+    <string name="pref_tea_type_sort">Tea Type</string>
+    <string name="pref_caffeine_sort">Caffeine Level</string>
+    <string name="pref_sort_dialog_title">Sort By:</string>
+    <string name="pref_sort_summary">Choose an order to sort your teas.</string>
+    <string name="pref_sort_title">Sort Order</string>
+
+    <string name="pref_sort_key" translatable="false">sort</string>
+    <string name="pref_default_sort_value" translatable="false">DEFAULT</string>
+    <string name="pref_tea_type_sort_value" translatable="false">TYPE</string>
+    <string name="pref_caffeine_sort_value" translatable="false">CAFFEINE</string>
+
+    <string name="pref_notification_key" translatable="false">notification</string>
+    <string name="pref_notification_title">Notification</string>
+    <string name="pref_notification_summary">Daily reminders to take afternoon tea.</string>
+
+    <string name="notification_channel_id" translatable="false">notify-tea-time</string>
+    <string name="notification_channel_name">Tea time reminder</string>
+    <string name="notification_channel_description">Show a random tea and a tea time reminder</string>
+    <string name="notification_title">Time for tea!</string>
+    <string name="notification_message">Today you should try %1$s</string>
+    <string name="more_info">MORE INFO</string>
+    <string name="find_desired">Find Desired Tea</string>
+
+    <string name="go_to_results">Go to Results</string>
+    <string name="select_origin">Select the desired origin location</string>
+    <string name="select_tea_type">Select the desired type of tea</string>
+    <string name="all">All</string>
+    <string name="search_results">Search Results</string>
+    <string name="filter_results">Favorites</string>
+
+</resources>

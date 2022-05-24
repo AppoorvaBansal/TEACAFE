@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+/*
+Do not modify this file. All dependencies required to complete the exam are included.
+ */
+
+android {
+    buildFeatures{
+        viewBinding = true
+    }
+
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.google.developers.teacup"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    ext {
+        appcompat_version = "1.3.0"
+        coretesting_version = "2.1.0"
+        core_ktx = '1.5.0'
+        espresso_version = "3.3.0"
+        junit_version = "4.12"
+        layout_version = "2.0.4"
+        lifecycle_version = "2.2.0"
+        material_version = "1.3.0"
+        paging_version = "2.1.2"
+        preference_version = "1.1.1"
+        room_version = '2.2.5'
+        runner_version = "1.2.0"
+        test_version = "1.1.1"
+        truth_version = "1.2.0"
+        uiautomator_version = "2.2.0"
+        viewmodel_ktx = "2.3.1"
+        viewpager_version = "1.0.0"
+        work_version = '2.5.0'
+    }
+
+    implementation "androidx.core:core-ktx:$core_ktx"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$layout_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.viewpager2:viewpager2:$viewpager_version"
+    implementation "androidx.preference:preference-ktx:$preference_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$viewmodel_ktx"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-common:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.work:work-runtime:$work_version"
+
+    androidTestImplementation "androidx.test.ext:junit:$test_version"
+    androidTestImplementation "androidx.test.ext:truth:$truth_version"
+    androidTestImplementation "androidx.test:runner:$runner_version"
+    androidTestImplementation "androidx.test:rules:$runner_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$coretesting_version"
+    androidTestImplementation "androidx.work:work-testing:$work_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-idling-resource:$espresso_version"
+}
